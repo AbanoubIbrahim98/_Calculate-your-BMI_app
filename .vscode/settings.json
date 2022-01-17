@@ -1,0 +1,14 @@
+{
+    "dart.flutterAdbConnectOnChromeOs": true,
+    "dart.previewHotReloadOnSaveWatcher": true,
+    "dart.previewFlutterUiGuides": true,
+    "dart.enableServerSnippets": true,
+    "dart.previewBazelWorkspaceCustomScripts": true,
+    "dart.normalizeFileCasing": true,
+    "dart.previewCommitCharacters": true,
+    "dart.previewFlutterUiGuidesCustomTracking": true,
+    "files.autoSave": "afterDelay",
+    "editor.wordWrap": "on",
+    "editor.autoClosingBrackets": "beforeWhitespace",
+    "editor.defaultFormatter": "HookyQR.beautify"
+}
