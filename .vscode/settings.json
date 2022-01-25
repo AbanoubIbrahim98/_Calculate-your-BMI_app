@@ -1,4 +1,5 @@
 {
+    "console":"terminal",
     "dart.flutterAdbConnectOnChromeOs": true,
     "dart.previewHotReloadOnSaveWatcher": true,
     "dart.previewFlutterUiGuides": true,
@@ -11,4 +12,5 @@
     "editor.wordWrap": "on",
     "editor.autoClosingBrackets": "beforeWhitespace",
     "editor.defaultFormatter": "HookyQR.beautify"
+    
 }

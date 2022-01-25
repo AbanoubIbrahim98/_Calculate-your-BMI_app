@@ -39,23 +39,23 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Expanded(
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                padding: const EdgeInsets.symmetric(horizontal: 10.0),
                 child: Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
-                    color: Colors.red,
+                    color: Colors.teal[300],
                   ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text('Height',
+                      Text(' Person Height',
                           style: Theme.of(context).textTheme.headline2),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.baseline,
                         textBaseline: TextBaseline.alphabetic,
                         children: [
-                          Text(heightVal.toStringAsFixed(1),
+                          Text(heightVal.toStringAsFixed(2),
                               style: Theme.of(context).textTheme.headline1),
                           Text('CM',
                               style: Theme.of(context).textTheme.bodyText1),
@@ -88,7 +88,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Container(
               color: Colors.teal,
               width: double.infinity,
-              height: MediaQuery.of(context).size.height / 16,
+              height: MediaQuery.of(context).size.height / 20,
               child: TextButton(
                 onPressed: () {
                   var result = weight / pow(heightVal / 100, 2);
@@ -121,8 +121,8 @@ class _MyHomePageState extends State<MyHomePage> {
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
             color: (isMale && type == 'male') || (!isMale && type == 'female')
-                ? Colors.teal
-                : Colors.pink,
+                ? Colors.teal[300]
+                : Colors.yellow[500],
           ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,

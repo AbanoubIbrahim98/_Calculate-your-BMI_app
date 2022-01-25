@@ -1,10 +1,16 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-
+import 'firebase_options.dart';
 import 'home.dart';
 
-
-void main() => runApp(const MyApp());
-
+void main() async {
+  
+WidgetsFlutterBinding.ensureInitialized();
+await Firebase.initializeApp(
+  options: DefaultFirebaseOptions.currentPlatform,
+); 
+runApp(const MyApp());
+}
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
@@ -15,20 +21,17 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-          primarySwatch: Colors.teal,
-          canvasColor: Colors.black,
-          textTheme: const TextTheme(
-            headline1: TextStyle(
-                  fontSize: 25,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                ),
-
+        primarySwatch: Colors.orange,
+        canvasColor: Colors.green,
+        textTheme: const TextTheme(
+          headline1: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
           ),
-          ),
-      home: const MyHomePage(
-        
+        ),
       ),
+      home: const MyHomePage(),
     );
   }
 }
